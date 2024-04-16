@@ -8,3 +8,17 @@ h1 {
   font-size: 50px;
   text-align: center;
 }
+
+.menu {
+  background-color: #936748;
+}
+
+.page-design {
+  display: flex;
+  flex-direction: row;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}

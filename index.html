@@ -24,13 +24,21 @@
           <ul>
             <li><a href="#">Кратко запознанство</a></li>
             <li><a href="#">Опознаване на кода</a></li>
-            <li><a href="#">CoffeeScript 2</a></li>
             <li><a href="#">Интеграции</a></li>
+            <li><a href="#">Ресурси</a></li>
             <li><a href="#">Референции</a></li>
           </ul>
         </nav>
       </div>
     </header>
+    <div class="page-design">
+    <div class="menu"> <h1>MENU</h1>
+      <li><a href="#">Кратко запознанство</a></li>
+      <li><a href="#">Опознаване на кода</a></li>
+      <li><a href="#">Интеграции</a></li>
+      <li><a href="#">Ресурси</a></li>
+      <li><a href="#">Референции</a></li></div>
+    <div class="info">
     <div class="feature-one"> 
       <h3>Освен Java, JavaScript и Mocha - има изненадващ брой езици за програмиране, кръстени на кафе. Един език, за който може би не сте чували преди?</h3>
       <img src="./assets/images/coffeescript-logo-no-bg.png" alt="" />
@@ -49,43 +57,100 @@
         Компилираният изход е четим, красиво отпечатан и има тенденция да работи
         толкова бързо или по-бързо от еквивалентния JavaScript код. Нататък ще разбереш повече за времето и причините за създаване на този език.
       </p>
+      </div>
+      <div class="feature-two">
       <h1>Опознаване на кода</h1>
       <h2>Нека направим сравнение с чист JavaScript:</h2>
-
+<div class="code">
       <pre>    
-        <code>
-          # Assignment:
-          number   = <code>42</code>
-          opposite = <code>true</code>
-          
-          # Conditions:
-          number = <code>-42</code> if opposite
-          
-          # Functions:
-          square = (x) -> x * x
-          
-          # Arrays:
-          <code class="Array">list = [<code>1</code>, <code>2</code>, <code>3</code>, <code>4</code>, <code>5</code>]</code>
-          
-          # Objects:
-          math =
-            root:   Math.<code>sqrt</code>
-            square: square
-            cube:   (x) -> x * square x
-          
-          # Splats:
-          race = (winner, runners...) <code>-></code>
-            print winner, runners
-          
-          # Existence:
-          alert "I knew it!" if elvis?
-          
-          # Array comprehensions:
-          cubes = (math.<code>cube</code> num for num in list)
-        </code>
-  </pre>
+        <code class="comment"># Assignment:</code>
+        <code class="variable">number</code>   = <code class="value">42</code>
+        <code class="boolean">opposite</code> = <code class="boolean">true</code>
+                
+        <code class="comment"># Conditions:</code>
+        <code class="variable">number</code> = <code class="value">-42</code> if <code class="boolean">opposite</code>
+                
+        <code class="comment"># Functions:</code>
+        <code>square</code> = (x) -> x * x
+                
+        <code class="comment"># Arrays:</code>
+        <code class="array">list</code> = [<code class="value">1</code>, <code class="value">2</code>, <code class="value">3</code>, <code class="value">4</code>, <code class="value">5</code>]
+                
+        <code class="comment"># Objects:</code>
+        <code>math</code> =
+          root:   Math.<code class="keyword">sqrt</code>
+          square: square
+          cube:   (x) -> x * square x
+                
+        <code class="comment"># Splats:</code>
+        <code>race</code> = (winner, runners...) <code>-></code>
+          print winner, runners
+                
+        <code class="comment"># Existence:</code>
+        alert "I knew it!" if <code class="variable">elvis</code>?
+                
+        <code class="comment"># Array comprehensions:</code>
+        <code>cubes</code> = (math.<code class="function">cube</code> num for num in <code class="array">list</code>)
+      </pre>
+      <pre>    
+        <code class="comment">// Assignment:</code>
+        <code class="keyword">var</code> cubes, list, math, num, number, opposite, race, square;
+        
+        <code class="variable">number</code> = <code class="number">42</code>;
+        
+        <code class="variable">opposite</code> = <code class="boolean">true</code>;
+        
+        <code class="keyword">if</code> (<code class="variable">opposite</code>) {
+          <code class="comment">// Conditions:</code>
+          <code class="variable">number</code> = <code class="number">-42</code>;
+        }
+        
+        <code class="comment">// Functions:</code>
+        <code class="variable">square</code> = <code class="function">(</code><code class="variable">x</code>) => {
+          <code class="keyword">return</code> <code class="variable">x</code> * <code class="variable">x</code>;
+        };
+        
+        <code class="comment">// Arrays:</code>
+        <code class="variable">list</code> = [<code class="number">1</code>, <code class="number">2</code>, <code class="number">3</code>, <code class="number">4</code>, <code class="number">5</code>];
+        
+        <code class="comment">// Objects:</code>
+        <code class="variable">math</code> = {
+          <code class="property">root</code>: Math.<code class="property">sqrt</code>,
+          <code class="property">square</code>: <code class="variable">square</code>,
+          <code class="property">cube</code>: <code class="function">(</code><code class="variable">x</code>) => {
+            <code class="keyword">return</code> <code class="variable">x</code> * <code class="variable">square</code>(<code class="variable">x</code>);
+          }
+        };
+        
+        <code class="comment">// Splats:</code>
+        <code class="variable">race</code> = <code class="function">(</code><code class="variable">winner</code>, <code class="argument">...</code><code class="variable">runners</code>) => {
+          <code class="keyword">return</code> print(<code class="variable">winner</code>, <code class="argument">...</code><code class="variable">runners</code>);
+        };
+        
+        <code class="keyword">if</code> (<code class="keyword">typeof</code> <code class="variable">elvis</code> !== <code class="string">"undefined"</code> && <code class="variable">elvis</code> !== <code class="literal">null</code>) {
+          <code class="comment">// Existence:</code>
+          alert(<code class="string">"I knew it!"</code>);
+        }
+        
+        <code class="comment">// Array comprehensions:</code>
+        <code class="variable">cubes</code> = (() => {
+          <code class="variable">var</code> i, len, <code class="variable">results</code>;
+          <code class="variable">results</code> = [];
+          <code class="keyword">for</code> (<code class="variable">i</code> = <code class="number">0</code>, <code class="variable">len</code> = <code class="variable">list</code>.<code class="property">length</code>; <code class="variable">i</code> < <code class="variable">len</code>; <code class="variable">i</code>++) {
+            <code class="variable">num</code> = <code class="variable">list</code>[<code class="variable">i</code>];
+            <code class="variable">results</code>.<code class="function">push</code>(<code class="variable">math</code>.<code class="property">cube</code>(<code class="variable">num</code>));
+          }
+          <code class="keyword">return</code> <code class="variable">results</code>;
+        })();
+      </code>
+      </pre>
+    </div>
+      
 </div>
-<div class="feature-two">
+<div class="feature-three">
+  <h1>А сега малко повече по кода</h1>
+</div>
+<div class="feature-four">
       <h1>Историята на CoffeeScript</h1>
       <h2>Кой, кога и защо създава този език?</h2>
       <p>
@@ -101,7 +166,7 @@
          Той също така създава CoffeeScript така, че да може да се компилира в обикновен JavaScript, което не било нова концепция, но CoffeeScript я прави много по-известна.
       </p>
 </div>
-<div class="feature-three">
+<div class="feature-five">
   <h1>Кой е използвал CoffeeScript?</h1>
   <p>Една от най-големите компании, които приеха CoffeeScript, беше Dropbox. Те пренаписаха целия си преден код 
     с помощта на CoffeeScript за една седмица през 2012 г. Те вярваха, че това коригира много от проблемите със 
@@ -111,7 +176,7 @@
     Екипът за разработка на текстовия редактор Atom, инструмент, който много разработчици използват за писане на код, също прие CoffeeScript,
      което го прави официален език на тяхната кодова база.</p>
 </div>
-<div class="feature-four">
+<div class="feature-six">
       <h1>Как да инсталираме CoffeeScript?</h1>
       <p>
         Версията на кафето от командния ред е достъпна като помощна програма
@@ -127,6 +192,8 @@
           така че версията на CoffeeScript да се проследява като една от зависимостите на вашия проект. 
           В папката на този проект: <pre>npm install --save-dev coffeescript</pre>
           Командите за <pre>coffee</pre> и <pre>cake</pre> първо ще потърсят в текущата папка, за да видят дали CoffeeScript е инсталиран локално и ще използват тази версия, ако е така. Това позволява различни версии на CoffeeScript да бъдат инсталирани глобално и локално.</p>
-</div>  
+        </div>
+        </div> 
+</div> 
   </body>
 </html>
