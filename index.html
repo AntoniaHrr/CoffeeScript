@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoffeeScript</title>
+    <link href="assets/css/index.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/4986c7453d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container nav-container">
+        <div class="logo-wrapper">
+          <img
+            src="./assets/images/coffeescript-logo-no-bg.png"
+            alt="CofeeScript logo"
+            onclick=""
+          />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Кратко запознанство</a></li>
+            <li><a href="#">Опознаване на кода</a></li>
+            <li><a href="#">CoffeeScript 2</a></li>
+            <li><a href="#">Интеграции</a></li>
+            <li><a href="#">Референции</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="feature-one"> 
+      <h3>Освен Java, JavaScript и Mocha - има изненадващ брой езици за програмиране, кръстени на кафе. Един език, за който може би не сте чували преди?</h3>
+      <img src="./assets/images/coffeescript-logo-no-bg.png" alt="" />
+     
+      <h1>Кратко запознанство с CoffeeScript!</h1>
+
+      <p>
+        <i class="fa-solid fa-mug-hot"></i>
+        CoffeeScript е малък език, който се компилира в JavaScript. Под тази
+        неудобна патина в стил Java JavaScript винаги е имал прекрасно сърце.
+        CoffeeScript е опит да се разкрият добрите части на JavaScript по лесен
+        начин. Златното правило на CoffeeScript е: „Това е просто JavaScript.“
+        Кодът се компилира едно към едно в еквивалентен JS и няма интерпретация
+        по време на изпълнение. Можете да използвате всяка съществуваща
+        JavaScript библиотека безпроблемно от CoffeeScript (и обратно).
+        Компилираният изход е четим, красиво отпечатан и има тенденция да работи
+        толкова бързо или по-бързо от еквивалентния JavaScript код. Нататък ще разбереш повече за времето и причините за създаване на този език.
+      </p>
+      <h1>Опознаване на кода</h1>
+      <h2>Нека направим сравнение с чист JavaScript:</h2>
+
+      <pre>    
+        <code>
+          # Assignment:
+          number   = <code>42</code>
+          opposite = <code>true</code>
+          
+          # Conditions:
+          number = <code>-42</code> if opposite
+          
+          # Functions:
+          square = (x) -> x * x
+          
+          # Arrays:
+          <code class="Array">list = [<code>1</code>, <code>2</code>, <code>3</code>, <code>4</code>, <code>5</code>]</code>
+          
+          # Objects:
+          math =
+            root:   Math.<code>sqrt</code>
+            square: square
+            cube:   (x) -> x * square x
+          
+          # Splats:
+          race = (winner, runners...) <code>-></code>
+            print winner, runners
+          
+          # Existence:
+          alert "I knew it!" if elvis?
+          
+          # Array comprehensions:
+          cubes = (math.<code>cube</code> num for num in list)
+        </code>
+  </pre>
+</div>
+<div class="feature-two">
+      <h1>Историята на CoffeeScript</h1>
+      <h2>Кой, кога и защо създава този език?</h2>
+      <p>
+        Първият Git комит има коментар „първоначален комит на мистериозния език“.
+        Първата стабилна версия на CoffeeScript беше публикувана от Джереми Ашкенас през 2010 г.
+        Започва като малък страничен проект, който бързо се развива. Дори Брендън Айх, създателят на JavaScript,
+        казва, че CoffeeScript е страхотна идея, която трябва да служи като пример за бъдещето на JavaScript. <br>
+        <br>Днес CoffeeScript не е толкова популярен, колкото е бил преди – но е успял да окаже огромно влияние върху JavaScript, TypeScript 
+        и много от процесите за разработка на front-end, които все още използваме днес.
+        <br><br>
+        Джереми Ашкенас смятал, че JavaScript има изключителни характеристики и много за предлагане, и с няколко промени той може да бъде подобрен. Той създава CoffeeScript,
+         за да изведе отличните характеристики на JavaScript на преден план и да скрие по-сложните и объркващи функции, като добавя „синтактична захар“. 
+         Той също така създава CoffeeScript така, че да може да се компилира в обикновен JavaScript, което не било нова концепция, но CoffeeScript я прави много по-известна.
+      </p>
+</div>
+<div class="feature-three">
+  <h1>Кой е използвал CoffeeScript?</h1>
+  <p>Една от най-големите компании, които приеха CoffeeScript, беше Dropbox. Те пренаписаха целия си преден код 
+    с помощта на CoffeeScript за една седмица през 2012 г. Те вярваха, че това коригира много от проблемите със 
+    синтаксиса в JavaScript. В края на краищата, Брендън Айх написа оригиналната версия на езика само за десет дни през 1995 г.
+     и до този момент имаше малко промени в езика. JavaScript се развиваше твърде бавно и CoffeeScript добави много полезни функции.
+<br><br>
+    Екипът за разработка на текстовия редактор Atom, инструмент, който много разработчици използват за писане на код, също прие CoffeeScript,
+     което го прави официален език на тяхната кодова база.</p>
+</div>
+<div class="feature-four">
+      <h1>Как да инсталираме CoffeeScript?</h1>
+      <p>
+        Версията на кафето от командния ред е достъпна като помощна програма
+        Node.js, изискваща Node 6 или по-нова версия. Основният компилатор обаче
+        не зависи от Node и може да се изпълнява във всяка JavaScript среда или
+        в браузъра. За да инсталирате, първо се уверете, че имате работещо копие
+        на най-новата стабилна версия на Node.js. След това можете да
+        инсталирате CoffeeScript глобално с npm:
+      </p>
+      <pre>npm install --global coffeescript</pre>
+        <p>Това ще направи командите за <code>coffee</code> и <code>cake</code> достъпни глобално.
+          Ако използвате CoffeeScript в проект, трябва да го инсталирате локално за този проект,
+          така че версията на CoffeeScript да се проследява като една от зависимостите на вашия проект. 
+          В папката на този проект: <pre>npm install --save-dev coffeescript</pre>
+          Командите за <pre>coffee</pre> и <pre>cake</pre> първо ще потърсят в текущата папка, за да видят дали CoffeeScript е инсталиран локално и ще използват тази версия, ако е така. Това позволява различни версии на CoffeeScript да бъдат инсталирани глобално и локално.</p>
+</div>  
+  </body>
+</html>
