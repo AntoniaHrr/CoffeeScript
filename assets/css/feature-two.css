@@ -35,6 +35,11 @@
 }
 
 .feature-two h2 {
-  text-align: center;
-  padding: 30px 250px 30px 250px;
+  width: 400px;
+  padding-left: 250px;
+  padding-bottom: 20px;
+}
+
+.feature-two {
+  padding-bottom: 50px;
 }

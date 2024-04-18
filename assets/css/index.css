@@ -23,14 +23,49 @@ h1 {
   text-align: center;
 }
 
-.page-design {
+.container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 0px auto;
+}
+
+.page-design .menu {
+  max-width: 535px;
+  align-items: left;
+  padding-top: 105px;
+  padding-bottom: 135px;
 }
 
 .info {
-  display: flex;
-  flex-direction: column;
-  /* overflow-y: auto; /* Enable vertical scrolling 
-  max-height: calc(150vh - 150px); */
+  padding-left: 150px;
+  max-width: 800px;
+  margin: 50px 100px 50px 100px;
+
+  border-radius: 3px;
+}
+
+.update {
+  background-color: red;
+}
+
+.button-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.fixed-button {
+  padding: 10px 20px;
+  background-color: #885f43;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.fixed-button:hover {
+  background-color: #412e20;
 }
