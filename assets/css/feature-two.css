@@ -1,15 +1,16 @@
-pre {
+.feature-two pre {
   padding: 20px;
   border-radius: 5px;
   overflow-x: auto;
   background-color: #2f2625;
+  white-space: pre-wrap;
 }
 
-code {
+.feature-two code {
   font-family: "Courier New", Courier, monospace;
 }
 
-.comment {
+.feature-two .comment {
   color: #6a737d;
   font-style: italic;
 }
@@ -22,14 +23,6 @@ code {
   color: #005c5f;
 }
 
-.function {
-  color: #d73a49;
-}
-
-.array {
-  color: #008000;
-}
-
 .value,
 .keyword {
   color: #dad085;
@@ -38,4 +31,10 @@ code {
 .code {
   display: flex;
   flex-direction: row;
+  color: white;
+}
+
+.feature-two h2 {
+  text-align: center;
+  padding: 30px 250px 30px 250px;
 }
