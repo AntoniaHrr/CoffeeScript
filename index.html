@@ -4,23 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CoffeeScript</title>
-    <link href="assets/css/index.css" rel="stylesheet" />
+    <link href="./css/index.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/4986c7453d.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <div class="button-container">
-      <a class="fixed-button" href="#feature-one">Go to top</a>
-    </div>
-    <header>
+    <section class="button-container">
+      <a class="fixed-button" href="#home">Да се върнем в началото</a>
+    </section>
+   
+    <header class="sticky-header">
       <section class="container nav-container">
-        <section class="logo-wrapper">
+        <section class="logo-wrapper" >
           <img
-            src="./assets/images/coffeescript-white-logo-no-bg.png"
-            alt="CofeeScript logo"
-            onclick=""
+            src="./img/coffeescript-white-logo-no-bg.png"
+            alt="CoffeeScript logo"
           />
         </section>
         <nav>
@@ -31,43 +31,48 @@
             <li><a href="#feature-four">История</a></li>
             <li><a href="#feature-five">Интеграции</a></li>
             <li><a href="#feature-six">Инсталиране</a></li>
+            <li><a href="#feature-seven">Има ли недостатъци?</a></li>
           </ul>
         </nav>
       </section>
       
     </header>
-    <p class="update">!! Тази страница е още в процес на актуализиране. Предстоят промени свързани с динамичното променяне на екрана, както и "козметични промени"!!!</p>
+    <p class="update">____</p>
     <section class="page-design">
       <section class="container">
         <section class="menu">
-        <h1>МЕНЮ</h1>
-        <ul>
-          <li><a href="#feature-one">Кратко запознанство</a></li>
-            <li><a href="#feature-two">Опознаване на кода</a></li>
-            <li><a href="#feature-three">Малко повече</a></li>
-            <li><a href="#feature-four">История</a></li>
-            <li><a href="#feature-five">Интеграции</a></li>
-            <li><a href="#feature-six">Инсталиране</a></li>
-            <li><a href="#feature-seven">Минуси</a></li>
-        </ul>
+          <section class="container-coffee">
+            <section class="row beans">
+            </section>
+            <section class="row grinder">
+            </section>
+            <section class="row grinder_bottom">
+            </section>
+            <section class="row v60">
+            </section>
+            <section class="row drip">
+            </section>
+            <section class="row cup">
+            </section>
+          </section>
       </section>
       <section class="info">
         <section id="feature-one" class="feature-one">
-          <h3>
+          <h3 class="intro">
               Освен Java, JavaScript и Mocha - има изненадващ брой езици за
               програмиране, кръстени на кафе. Един език, за който може би не сте
               чували преди?
             </h3>
-          <img src="./assets/images/coffeescript-logo-no-bg.png" alt="" />
+          <img src="./img/coffeescript-logo-no-bg.png" alt="" id="home"/>
           <br /><br /><br />
           <h1>Кратко запознанство с CoffeeScript!</h1>
           <br /><br />
           <p>
-            <i class="fa-solid fa-mug-hot"></i>
-            CoffeeScript е малък език, който се компилира в JavaScript. Под тази
+          
+              CoffeeScript е малък език, който се компилира в JavaScript. Под тази
             неудобна патина в стил Java JavaScript винаги е имал прекрасно
             сърце. CoffeeScript е опит да се разкрият добрите части на
-            JavaScript по лесен начин. <br />
+            JavaScript по лесен начин. <br /><br>
             Златното правило на CoffeeScript е: „Това е просто JavaScript.“
             Кодът се компилира едно към едно в еквивалентен JS и няма
             интерпретация по време на изпълнение. Можете да използвате всяка
@@ -189,7 +194,7 @@
       <code>square = function(x) {</code><br>
       <code>  return x * x;</code><br>
       <code>};</code><br>
-      <code>cube = function(x) {</code><br>
+      <code>cube = function(x) {</code><bfr>
       <code>  return square(x) * x;</code><br>
       <code>};</code>
     </pre>
@@ -372,7 +377,7 @@
         <section id="feature-five" class="feature-five">
           <h1>Кой е използвал CoffeeScript?</h1>
           <img
-            src="./assets/images/Dropbox-logo-no-bg.png"
+            src="./img/Dropbox-logo-no-bg.png"
             alt="Dropbox Logo"
           />
           <p>
@@ -383,7 +388,7 @@
             се развивава твърде бавно и CoffeeScript добавя много полезни
             функции.
           </p>
-          <br /><img src="./assets/images/atom-logo.png" alt="Atom logo" />
+          <br /><img src="./img/atom-logo.png" alt="Atom logo" />
           <p>
             Atom е популярен текстов редактор, разработен от GitHub. Той е
             изграден върху Electron и използва CoffeeScript за основната си
@@ -391,7 +396,7 @@
             осигури по-удобно изживяване чрез опростяване на сложния JavaScript
             код.
           </p>
-          <br /><img src="./assets/images/docpad-logo.png" alt="Docpad logo" />
+          <br /><img src="./img/docpad-logo.png" alt="Docpad logo" />
           <p>
             DocPad е статичен генератор на сайтове, който позволява на
             разработчиците да генерират HTML уебсайтове, използвайки различни
@@ -418,7 +423,7 @@
           Командите за <pre class="coffee"><code>coffee</code></pre> и <pre class="cake"><code>cake</code></pre>първо ще потърсят в текущата папка, за да видят дали CoffeeScript е инсталиран локално и ще използват тази версия, ако е така. Това позволява различни версии на CoffeeScript да бъдат инсталирани глобално и локално.</p>
       </section>
         <section id="feature-seven" class="featutre-seven">
-          <h1>Минусите</h1>
+          <h1>Има ли недостатъци?</h1>
           <h3>
             Макар и да звучи толкова изкушаващ, че да забравим за JavaScript и
             да преминем изцяло на CoffeeScript, то той има и своите минуси
@@ -452,5 +457,27 @@
     </section>
 
     </section>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+
+              document.querySelector(this.getAttribute('href')).scrollIntoView({
+                  behavior: 'smooth'
+              });
+          });
+      });
+    </script><script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+
+              document.querySelector(this.getAttribute('href')).scrollIntoView({
+                  behavior: 'smooth'
+              });
+          });
+      });
+    </script>
   </body>
 </html>
